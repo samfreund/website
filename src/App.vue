@@ -166,7 +166,7 @@ const socialLinks = [
       >
         <span class="self-center md:self-initial shrink">
           <img
-            src="/images/headshot.jpg"
+            src="/public/images/headshot.jpg"
             alt="Sam Freund"
             class="max-w-48 md:max-w-80 rounded-full drop-shadow-2xl transition-transform duration-500 hover:scale-105"
           />
