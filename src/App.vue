@@ -4,88 +4,93 @@ import GridSection from "./components/GridSection.vue";
 
 const navLinks = [
   {
-    href: "https://www.linkedin.com/in/samuel-freund/",
-    label: "LinkedIn",
-    icon: "fab fa-linkedin-in",
+    href: "#about",
+    label: "About",
+    icon: "fa-solid fa-user",
   },
   {
-    href: "https://github.com/samfreund/",
-    label: "GitHub",
-    icon: "fab fa-github",
+    href: "#skills",
+    label: "Skills",
+    icon: "fa-solid fa-code",
   },
   {
-    href: "mailto:samf.236@proton.me",
-    label: "Email",
-    icon: "fa-solid fa-envelope-open-text",
-  },
-];
-
-const features = [
-  {
-    icon: "fa-solid fa-location-arrow",
-    title: "First-Class AprilTag Support",
-    description: "FRC Target tracking, out of the box.",
+    href: "#projects",
+    label: "Projects",
+    icon: "fa-solid fa-folder-open",
   },
   {
-    icon: "fa-solid fa-chess-board",
-    title: "Built-In Camera Calibration",
-    description:
-      "Per-camera intrinsics calibration maximizes accuracy of homography",
-  },
-  {
-    icon: "fa-solid fa-brain",
-    title: "Machine Learning",
-    description: "Hardware-accelerated inferencing for gamepiece detection",
-  },
-  {
-    icon: "fa-solid fa-eye",
-    title: "Driver Mode Integration",
-    description: "Use the same camera for driving and robot vision",
-  },
-  {
-    icon: "fa-solid fa-camera",
-    title: "Simultaneous Multi-Camera Operation",
-    description:
-      "PhotonVision can run as many cameras as your hardware can handle",
-  },
-  {
-    icon: "fa-solid fa-layer-group",
-    title: "Multi-Tag Pose Estimation",
-    description: "Fuse all your available data for peak robot performance",
+    href: "#contact",
+    label: "Contact",
+    icon: "fa-solid fa-envelope",
   },
 ];
 
-const fossFeatures = [
+const skills = [
   {
-    icon: "fa-solid fa-check",
-    title: "Open Source",
-    description:
-      "PhotonVision is the largest FOSS FRC Vision project to date, constantly being updated with new features and bug fixes.",
+    icon: "fa-solid fa-code",
+    title: "Frontend Development",
+    description: "Building responsive and interactive user interfaces with modern frameworks.",
   },
   {
-    icon: "fa-solid fa-balance-scale",
-    title: "GNU GPL v3",
-    description:
-      "The GNU GPL v3 license allows you to download, modify and share source code.",
+    icon: "fa-solid fa-server",
+    title: "Backend Development",
+    description: "Creating scalable server-side applications and RESTful APIs.",
   },
   {
-    icon: "fab fa-github",
-    title: "We're on GitHub",
-    description:
-      "We do all of our development openly on GitHub. Transparency is key for every contributor of PhotonVision.",
+    icon: "fa-solid fa-database",
+    title: "Database Design",
+    description: "Designing and optimizing database schemas for performance and reliability.",
+  },
+  {
+    icon: "fa-solid fa-mobile-alt",
+    title: "Mobile Development",
+    description: "Developing cross-platform mobile applications with native performance.",
+  },
+  {
+    icon: "fa-solid fa-cloud",
+    title: "Cloud Services",
+    description: "Deploying and managing applications on cloud platforms.",
+  },
+  {
+    icon: "fa-solid fa-cog",
+    title: "DevOps",
+    description: "Automating workflows and implementing CI/CD pipelines.",
+  },
+];
+
+const projects = [
+  {
+    icon: "fa-solid fa-laptop-code",
+    title: "Project One",
+    description: "A brief description of your first project and the technologies used to build it.",
+  },
+  {
+    icon: "fa-solid fa-rocket",
+    title: "Project Two",
+    description: "A brief description of your second project and the impact it had.",
+  },
+  {
+    icon: "fa-solid fa-chart-line",
+    title: "Project Three",
+    description: "A brief description of your third project and what makes it unique.",
   },
 ];
 
 const socialLinks = [
   {
-    href: "https://github.com/PhotonVision/photonvision/",
+    href: "https://github.com/samfreund/",
     icon: "fab fa-github",
     label: "GitHub",
   },
   {
-    href: "https://discord.gg/wYxTwym",
-    icon: "fab fa-discord",
-    label: "Discord",
+    href: "https://www.linkedin.com/in/samuel-freund/",
+    icon: "fab fa-linkedin-in",
+    label: "LinkedIn",
+  },
+  {
+    href: "mailto:samf.236@proton.me",
+    icon: "fa-solid fa-envelope",
+    label: "Email",
   },
 ];
 </script>
@@ -98,12 +103,12 @@ const socialLinks = [
     >
       <a href="#" class="flex items-center gap-3 py-2 group">
         <img
-          src="/images/PhotonVision-Icon-BG.png"
-          alt="PhotonVision"
-          class="w-10 h-10 group-hover:scale-110 transition-transform duration-300"
+          src="/images/headshot.png"
+          alt="Sam Freund"
+          class="w-10 h-10 rounded-full group-hover:scale-110 transition-transform duration-300"
         />
         <span class="font-bold text-xl hidden sm:block text-white">
-          PhotonVision
+          Sam Freund
         </span>
       </a>
       <div>
@@ -131,13 +136,6 @@ const socialLinks = [
               <i :class="link.icon"></i>
               {{ link.label }}
             </a>
-            <Button
-              href="https://demo.photonvision.org"
-              variant="primary"
-              size="sm"
-            >
-              Demo
-            </Button>
           </div>
         </div>
       </div>
@@ -153,205 +151,130 @@ const socialLinks = [
           <i :class="[link.icon, 'text-sm opacity-70']"></i>
           {{ link.label }}
         </a>
-        <Button
-          href="https://demo.photonvision.org"
-          variant="primary"
-          size="sm"
-          class="ml-2"
-        >
-          Demo
-        </Button>
       </nav>
     </header>
 
     <section
+      id="about"
       class="flex flex-col min-h-[calc(100vh_-_56px)] md:justify-center items-center p-8 md:p-16 relative overflow-hidden"
     >
       <div
-        class="flex justify-center md:justify-start flex-col md:flex-row items-start"
+        class="flex justify-center md:justify-start flex-col md:flex-row items-center gap-8"
       >
-        <span class="self-center md:self-initial mb-8 md:mb-0 md:me-12 shrink">
+        <span class="self-center md:self-initial shrink">
           <img
-            src="/images/PhotonVision-Icon-BG.png"
-            alt="PhotonVision Logo"
-            class="max-w-20 md:max-w-80 drop-shadow-2xl md:p-0 transition-transform duration-500"
+            src="/images/headshot.png"
+            alt="Sam Freund"
+            class="max-w-48 md:max-w-80 rounded-full drop-shadow-2xl transition-transform duration-500 hover:scale-105"
           />
         </span>
         <header
           class="flex flex-col gap-6 items-center md:items-start justify-center text-center md:text-start"
         >
-          <h2
+          <h1
             class="text-5xl md:text-6xl font-bold drop-shadow-lg font-heading"
           >
-            PhotonVision
-          </h2>
+            Hi, I'm <span class="text-brand-yellow">Sam Freund</span>
+          </h1>
           <div
             class="text-xl md:text-2xl max-w-128 text-zinc-300 leading-relaxed"
           >
-            PhotonVision is the free, fast, and easy-to-use computer vision
-            solution for the FIRST® Robotics Competition. Teams can download a
-            PhotonVision image for select coprocessors and start tracking
-            targets in minutes.
+            I'm a software developer passionate about building elegant solutions
+            to complex problems. Welcome to my portfolio.
           </div>
-          <Button
-            href="https://docs.photonvision.org/en/latest/docs/quick-start/quick-install.html"
-            variant="primary"
-            size="lg"
-            class="self-center md:self-start rounded-xl"
-          >
-            Get Started
-          </Button>
+          <div class="flex gap-4 self-center md:self-start">
+            <Button
+              href="#projects"
+              variant="primary"
+              size="lg"
+              class="rounded-xl"
+            >
+              View My Work
+            </Button>
+            <Button
+              href="#contact"
+              variant="outline"
+              size="lg"
+              class="rounded-xl"
+            >
+              Get in Touch
+            </Button>
+          </div>
         </header>
       </div>
       <a
-        href="#demo"
+        href="#skills"
         class="absolute bottom-8 p-4 text-brand-yellow/70 hover:text-brand-yellow hover:translate-y-1 transition-all duration-300 animate-bounce"
       >
         <i class="fa-solid fa-chevron-down text-2xl"></i>
       </a>
     </section>
 
-    <section
-      id="demo"
-      class="min-h-[calc(100vh_-_56px)] relative justify-center flex items-center py-16 bg-zinc-950"
-    >
-      <div class="relative mx-4 md:mx-16 lg:mx-32">
-        <div
-          class="absolute -inset-4 bg-gradient-to-r from-primary via-brand-blue to-brand-yellow rounded-2xl blur-xl opacity-30"
-        ></div>
-        <img
-          src="/images/demo.png"
-          alt="Demo of PhotonVision UI"
-          loading="lazy"
-          class="relative rounded-xl shadow-2xl border border-zinc-700/50"
-        />
-      </div>
-      <a
-        href="#features"
-        class="absolute bottom-8 p-4 text-brand-yellow/70 hover:text-brand-yellow hover:translate-y-1 transition-all duration-300"
-      >
-        <i class="fa-solid fa-chevron-down text-2xl"></i>
-      </a>
-    </section>
-
     <GridSection
-      id="features"
-      description="PhotonVision is a powerful, open-source vision system for FRC. It's designed to be fast and easy to use, regardless of your team's financial or technical resources."
-      :features="features"
+      id="skills"
+      description="I specialize in full-stack development with expertise across modern technologies and frameworks. Here are some of the areas where I excel."
+      :features="skills"
       :columns="2"
       show-scroll-indicator
-      scroll-target="#video"
+      scroll-target="#projects"
     >
       <template #title>
-        The Future is in <span class="text-brand-yellow">Sight</span>
+        Skills & <span class="text-brand-yellow">Expertise</span>
       </template>
     </GridSection>
 
-    <section id="video" class="relative">
-      <div class="relative">
-        <video
-          src="/images/in-action.mp4"
-          playsinline
-          autoplay
-          loop
-          muted
-          class="w-full h-[calc(100vh_-_56px)] object-cover"
-        ></video>
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-transparent to-zinc-900/30 pointer-events-none"
-        ></div>
-      </div>
-    </section>
-
-    <section
-      id="champs"
-      class="flex flex-col lg:flex-row items-center justify-center relative py-16 px-8 md:px-16 lg:px-28 gap-12 bg-primary"
-    >
-      <header
-        class="flex flex-col gap-6 justify-center items-center lg:items-start text-center lg:text-left"
-      >
-        <h2 class="text-4xl font-bold font-heading">Champs 2024 Talk</h2>
-        <p class="text-zinc-200 text-lg max-w-md">
-          Watch our presentation from the 2024 FIRST Championship and learn how
-          to get the most out of PhotonVision.
-        </p>
-        <div class="flex gap-4">
-          <Button
-            href="https://docs.google.com/presentation/d/1Gh5InslM5p7aDxjzK8DHoEorpATOl-MQWWixY5GjGgs/edit#slide=id.p"
-            variant="secondary"
-          >
-            Slide Deck
-          </Button>
-          <Button
-            href="https://github.com/PhotonVision/champs_2024"
-            variant="outline"
-          >
-            View Code
-          </Button>
-        </div>
-      </header>
-      <div class="flex-1 max-w-3xl w-full">
-        <div
-          class="relative rounded-xl overflow-hidden shadow-2xl border border-white/10"
-        >
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/iV2v7F_9GwE?si=4wgaT1IrZBpA71dF"
-            title="YouTube video player"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            class="w-full aspect-video"
-          ></iframe>
-        </div>
-      </div>
-    </section>
-
     <GridSection
-      id="foss"
-      description="PhotonVision is an open-source, community based vision system designed for use within the FIRST® Robotics Competition that aims to provide easy and inexpensive vision tracking to teams."
-      :features="fossFeatures"
+      id="projects"
+      description="Here are some of my recent projects that showcase my skills and experience. Each project represents a unique challenge and learning opportunity."
+      :features="projects"
       :columns="3"
       reverse-cards
     >
       <template #title>
-        Built by the <span class="text-brand-yellow">Community</span>
+        Featured <span class="text-brand-yellow">Projects</span>
       </template>
     </GridSection>
 
-    <footer id="footer" class="py-12 px-8 bg-zinc-800 border-t border-zinc-700">
-      <div
-        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="/images/PhotonVision-Icon-BG.png"
-            class="w-12 h-12 hover:scale-110 transition-transform duration-300"
-            alt="PhotonVision logo"
-          />
-          <span class="font-semibold text-lg">PhotonVision</span>
-        </div>
-        <div class="flex gap-6">
+    <section
+      id="contact"
+      class="py-20 px-8 bg-zinc-900 border-t border-zinc-700"
+    >
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6 font-heading">
+          Get in <span class="text-brand-yellow">Touch</span>
+        </h2>
+        <p class="text-xl text-zinc-300 mb-8 max-w-2xl mx-auto">
+          I'm always interested in new opportunities and collaborations. Feel
+          free to reach out!
+        </p>
+        <div class="flex justify-center gap-6 mb-8">
           <a
             v-for="link in socialLinks"
             :key="link.href"
             :href="link.href"
-            class="text-zinc-400 hover:text-brand-yellow transition-colors"
-            :aria-label="link.label"
+            class="flex items-center gap-2 px-6 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors"
           >
-            <i :class="[link.icon, 'text-2xl']"></i>
+            <i :class="[link.icon, 'text-xl']"></i>
+            <span>{{ link.label }}</span>
           </a>
         </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="py-8 px-8 bg-zinc-800">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="/images/headshot.png"
+            class="w-10 h-10 rounded-full hover:scale-110 transition-transform duration-300"
+            alt="Sam Freund"
+          />
+          <span class="font-semibold text-lg">Sam Freund</span>
+        </div>
         <p class="text-sm text-zinc-400">
-          &copy;{{ new Date().getFullYear() }} PhotonVision. All rights
+          &copy;{{ new Date().getFullYear() }} Sam Freund. All rights
           reserved.
         </p>
       </div>
