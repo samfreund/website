@@ -180,7 +180,7 @@ const socialLinks = [
             Hi, I'm <span class="text-brand">Sam Freund</span>
           </h1>
           <div
-            class="text-xl md:text-2xl max-w-128 text-zinc-300 leading-relaxed"
+            class="text-xl md:text-2xl max-w-128 text-zinc-300 leading-relaxed px-4 md:px-8"
           >
             I'm an undergraduate computer science student at MSOE with a
             background in real-world application and iterative development. I'm
@@ -254,12 +254,14 @@ const socialLinks = [
           I'm always interested in new opportunities and collaborations. Feel
           free to reach out!
         </p>
-        <div class="flex justify-center gap-6 mb-8">
+        <div
+          class="flex flex-col md:flex-row justify-center gap-4 md:gap-6 mb-8"
+        >
           <a
             v-for="link in socialLinks"
             :key="link.href"
             :href="link.href"
-            class="flex items-center gap-2 px-6 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors"
+            class="flex items-center justify-center gap-2 px-6 py-3 bg-zinc-800 hover:bg-zinc-700 rounded-lg transition-colors"
           >
             <i :class="[link.icon, 'text-xl']"></i>
             <span>{{ link.label }}</span>
