@@ -4,24 +4,19 @@ import GridSection from "./components/GridSection.vue";
 
 const navLinks = [
   {
-    href: "https://docs.photonvision.org/en/latest/",
-    label: "Documentation",
-    icon: "fa-solid fa-book",
+    href: "https://www.linkedin.com/in/samuel-freund/",
+    label: "LinkedIn",
+    icon: "fab fa-linkedin-in",
   },
   {
-    href: "https://discord.gg/wYxTwym",
-    label: "Discord",
-    icon: "fab fa-discord",
-  },
-  {
-    href: "https://github.com/PhotonVision/photonvision/",
+    href: "https://github.com/samfreund/",
     label: "GitHub",
     icon: "fab fa-github",
   },
   {
-    href: "https://www.redbubble.com/people/PhotonVision/shop?asc=u",
-    label: "Merch",
-    icon: "fa-solid fa-shirt",
+    href: "mailto:samf.236@proton.me",
+    label: "Email",
+    icon: "fa-solid fa-envelope-open-text",
   },
 ];
 
