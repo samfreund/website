@@ -27,52 +27,55 @@ const navLinks = [
 
 const skills = [
   {
+    icon: "fa-solid fa-brain",
+    title: "Machine Learning & AI",
+    description:
+      "Computer vision with YOLO and TensorFlow, deep learning, and real-time model deployment on embedded systems.",
+  },
+  {
+    icon: "fa-solid fa-microchip",
+    title: "Embedded Systems",
+    description:
+      "Real-time systems, robotics control theory, and JNI integration with custom machine learning systems.",
+  },
+  {
     icon: "fa-solid fa-code",
-    title: "Frontend Development",
-    description: "Building responsive and interactive user interfaces with modern frameworks.",
+    title: "Software Development",
+    description:
+      "Proficient in Java, Python, C/C++, TypeScript, and Vue. Experience with full-stack development and API design.",
   },
   {
-    icon: "fa-solid fa-server",
-    title: "Backend Development",
-    description: "Creating scalable server-side applications and RESTful APIs.",
+    icon: "fa-solid fa-robot",
+    title: "Robotics & Control Systems",
+    description:
+      "Controls lead for NASA Lunabotics team. Expertise in robotics systems, control theory, and competition-level development.",
   },
   {
-    icon: "fa-solid fa-database",
-    title: "Database Design",
-    description: "Designing and optimizing database schemas for performance and reliability.",
+    icon: "fa-solid fa-linux",
+    title: "Systems & DevOps",
+    description:
+      "Linux system administration, Docker containerization, CI/CD pipelines, and Git-based collaboration workflows.",
   },
   {
-    icon: "fa-solid fa-mobile-alt",
-    title: "Mobile Development",
-    description: "Developing cross-platform mobile applications with native performance.",
-  },
-  {
-    icon: "fa-solid fa-cloud",
-    title: "Cloud Services",
-    description: "Deploying and managing applications on cloud platforms.",
-  },
-  {
-    icon: "fa-solid fa-cog",
-    title: "DevOps",
-    description: "Automating workflows and implementing CI/CD pipelines.",
+    icon: "fa-solid fa-code-branch",
+    title: "Open Source Leadership",
+    description:
+      "Developer and maintainer for PhotonVision. Code review, documentation, community management, and project governance.",
   },
 ];
 
 const projects = [
   {
-    icon: "fa-solid fa-laptop-code",
-    title: "Project One",
-    description: "A brief description of your first project and the technologies used to build it.",
+    icon: "fa-solid fa-camera",
+    title: "PhotonVision",
+    description:
+      "As a developer and maintainer of this open-source computer vision platform, I contribute to a project that empowers over 1,000 FIRST Robotics Competition teams worldwide. My work includes a complete overhaul of the object detection pipeline, adding support for the Rubik Pi 3, standardizing the web API for consistency, and publishing real-time metrics through NetworkTables. I also helped establish code review processes and enhanced CI/CD pipelines to improve security and code quality.",
   },
   {
     icon: "fa-solid fa-rocket",
-    title: "Project Two",
-    description: "A brief description of your second project and the impact it had.",
-  },
-  {
-    icon: "fa-solid fa-chart-line",
-    title: "Project Three",
-    description: "A brief description of your third project and what makes it unique.",
+    title: "NASA Lunabotics Robot",
+    description:
+      "Leading the controls team for MSOE's entry in the NASA Lunabotics competition, where we're developing an autonomous excavation robot designed to operate in simulated lunar conditions. I'm responsible for architecting and implementing the control systems, with a focus on achieving real-time performance and reliable operation in challenging environments.",
   },
 ];
 
@@ -179,8 +182,12 @@ const socialLinks = [
           <div
             class="text-xl md:text-2xl max-w-128 text-zinc-300 leading-relaxed"
           >
-            I'm a software developer passionate about building elegant solutions
-            to complex problems. Welcome to my portfolio.
+            I'm an undergraduate computer science student at MSOE with a
+            background in real-world application and iterative development. I'm
+            currently serving as the Controls Lead for the NASA Lunabotics team
+            at MSOE and a developer and maintainer for PhotonVision, an
+            open-source computer vision platform used by over 1000 robotics
+            teams.
           </div>
           <div class="flex gap-4 self-center md:self-start">
             <Button
@@ -227,7 +234,7 @@ const socialLinks = [
       id="projects"
       description="Here are some of my recent projects that showcase my skills and experience. Each project represents a unique challenge and learning opportunity."
       :features="projects"
-      :columns="3"
+      :columns="2"
       reverse-cards
     >
       <template #title>
@@ -274,8 +281,7 @@ const socialLinks = [
           <span class="font-semibold text-lg">Sam Freund</span>
         </div>
         <p class="text-sm text-zinc-400">
-          &copy;{{ new Date().getFullYear() }} Sam Freund. All rights
-          reserved.
+          &copy;{{ new Date().getFullYear() }} Sam Freund. All rights reserved.
         </p>
       </div>
     </footer>
