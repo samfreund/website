@@ -2,9 +2,8 @@
 @import "@toolwind/anchors";
 
 @theme {
-  --color-primary: #006492;
-  --color-brand-yellow: #ffd842;
-  --color-brand-blue: #39a4d6;
+  --color-primary: #758E4F;
+  --color-brand: #5C80CB;
   --font-sans: "Lato", sans-serif;
   --font-heading: "Prompt", sans-serif;
 }

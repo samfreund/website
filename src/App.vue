@@ -134,7 +134,7 @@ const socialLinks = [
               v-for="link in navLinks"
               :key="link.href"
               :href="link.href"
-              class="flex items-center gap-3 px-6 py-4 text-xl text-white hover:text-brand-yellow transition-colors"
+              class="flex items-center gap-3 px-6 py-4 text-xl text-white hover:text-brand transition-colors"
             >
               <i :class="link.icon"></i>
               {{ link.label }}
@@ -149,7 +149,7 @@ const socialLinks = [
           v-for="link in navLinks"
           :key="link.href"
           :href="link.href"
-          class="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-zinc-700/50 hover:text-brand-yellow transition-all duration-200"
+          class="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-zinc-700/50 hover:text-brand transition-all duration-200"
         >
           <i :class="[link.icon, 'text-sm opacity-70']"></i>
           {{ link.label }}
@@ -177,7 +177,7 @@ const socialLinks = [
           <h1
             class="text-5xl md:text-6xl font-bold drop-shadow-lg font-heading"
           >
-            Hi, I'm <span class="text-brand-yellow">Sam Freund</span>
+            Hi, I'm <span class="text-brand">Sam Freund</span>
           </h1>
           <div
             class="text-xl md:text-2xl max-w-128 text-zinc-300 leading-relaxed"
@@ -211,7 +211,7 @@ const socialLinks = [
       </div>
       <a
         href="#skills"
-        class="absolute bottom-8 p-4 text-brand-yellow/70 hover:text-brand-yellow hover:translate-y-1 transition-all duration-300 animate-bounce"
+        class="absolute bottom-8 p-4 text-brand/70 hover:text-brand hover:translate-y-1 transition-all duration-300 animate-bounce"
       >
         <i class="fa-solid fa-chevron-down text-2xl"></i>
       </a>
@@ -226,7 +226,7 @@ const socialLinks = [
       scroll-target="#projects"
     >
       <template #title>
-        Skills & <span class="text-brand-yellow">Expertise</span>
+        Skills & <span class="text-brand">Expertise</span>
       </template>
     </GridSection>
 
@@ -238,7 +238,7 @@ const socialLinks = [
       reverse-cards
     >
       <template #title>
-        Featured <span class="text-brand-yellow">Projects</span>
+        Featured <span class="text-brand">Projects</span>
       </template>
     </GridSection>
 
@@ -248,7 +248,7 @@ const socialLinks = [
     >
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-4xl font-bold mb-6 font-heading">
-          Get in <span class="text-brand-yellow">Touch</span>
+          Get in <span class="text-brand">Touch</span>
         </h2>
         <p class="text-xl text-zinc-300 mb-8 max-w-2xl mx-auto">
           I'm always interested in new opportunities and collaborations. Feel

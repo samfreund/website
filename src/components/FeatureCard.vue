@@ -16,7 +16,7 @@ defineProps<{
   >
     <div
       :class="[
-        'flex items-center justify-center rounded-xl bg-linear-to-br from-brand-blue to-primary shadow-lg',
+        'flex items-center justify-center rounded-xl bg-linear-to-br from-brand to-primary shadow-lg',
         'size-12 rounded-2xl mb-4',
       ]"
     >
@@ -24,7 +24,7 @@ defineProps<{
     </div>
     <h3
       :class="[
-        'font-semibold text-brand-yellow',
+        'font-semibold text-brand',
         reverse ? 'text-xl mb-3' : 'text-xl mb-2',
       ]"
     >

@@ -35,7 +35,7 @@ withDefaults(
     >
       <span
         v-if="label"
-        class="text-brand-blue font-semibold tracking-wider uppercase text-sm"
+        class="text-brand font-semibold tracking-wider uppercase text-sm"
       >
         {{ label }}
       </span>
@@ -47,7 +47,7 @@ withDefaults(
       <p class="text-xl md:text-2xl text-zinc-300 leading-relaxed">
         {{ description }}
       </p>
-      <div class="w-24 h-1 bg-brand-blue rounded-full"></div>
+      <div class="w-24 h-1 bg-brand rounded-full"></div>
     </header>
 
     <div :class="label ? 'relative z-10' : 'mb-8 lg:mb-0'">
@@ -69,7 +69,7 @@ withDefaults(
     <a
       v-if="showScrollIndicator && scrollTarget"
       :href="scrollTarget"
-      class="absolute bottom-8 p-4 text-brand-yellow/70 hover:text-brand-yellow hover:translate-y-1 transition-all duration-300"
+      class="absolute bottom-8 p-4 text-brand/70 hover:text-brand hover:translate-y-1 transition-all duration-300"
     >
       <i class="fa-solid fa-chevron-down text-2xl"></i>
     </a>
