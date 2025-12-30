@@ -103,7 +103,7 @@ const socialLinks = [
     >
       <a href="#" class="flex items-center gap-3 py-2 group">
         <img
-          src="/images/headshot.png"
+          src="/favicon.svg"
           alt="Sam Freund"
           class="w-10 h-10 rounded-full group-hover:scale-110 transition-transform duration-300"
         />
@@ -163,7 +163,7 @@ const socialLinks = [
       >
         <span class="self-center md:self-initial shrink">
           <img
-            src="/images/headshot.png"
+            src="/images/headshot.jpg"
             alt="Sam Freund"
             class="max-w-48 md:max-w-80 rounded-full drop-shadow-2xl transition-transform duration-500 hover:scale-105"
           />
@@ -267,7 +267,7 @@ const socialLinks = [
       >
         <div class="flex items-center gap-4">
           <img
-            src="/images/headshot.png"
+            src="/favicon.svg"
             class="w-10 h-10 rounded-full hover:scale-110 transition-transform duration-300"
             alt="Sam Freund"
           />
